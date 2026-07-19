@@ -120,7 +120,7 @@ function ProductForm({
         <label className="block text-sm font-medium mb-2">Description</label>
 
         <textarea
-          rows="2"
+          rows="5"
           name="description"
           placeholder="Enter product description..."
           value={formik.values.description}

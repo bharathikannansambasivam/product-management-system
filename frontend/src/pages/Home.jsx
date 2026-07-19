@@ -27,15 +27,23 @@ function Home() {
               Directus CMS, and Tailwind CSS.
             </p>
 
-            <div className="flex flex-wrap gap-4 mt-8">
-              <Link to="/products">
-                <button className="cursor-pointer bg-[#243B7B] hover:bg-green-800 text-white px-8 py-3 rounded-lg font-semibold transition duration-300 shadow-md">
+            <div className="mt-8 flex flex-col sm:flex-row gap-4">
+              <Link to="/products" className="w-full sm:w-auto">
+                <button
+                  className="w-full sm:w-auto bg-[#243B7B] hover:bg-green-800
+      text-white px-8 py-3 rounded-lg font-semibold
+      transition duration-300 shadow-md"
+                >
                   View Products
                 </button>
               </Link>
 
-              <Link to="/admin/add-product">
-                <button className="cursor-pointer border-2 border-[#243B7B] text-[#243B7B] hover:bg-green-800 hover:text-white px-8 py-3 rounded-lg font-semibold transition duration-300">
+              <Link to="/admin/add-product" className="w-full sm:w-auto">
+                <button
+                  className="w-full sm:w-auto border-2 border-[#243B7B]
+      text-[#243B7B] hover:bg-green-800 hover:text-white
+      px-8 py-3 rounded-lg font-semibold transition duration-300"
+                >
                   Add Product
                 </button>
               </Link>

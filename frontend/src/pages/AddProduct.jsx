@@ -81,7 +81,7 @@ function AddProduct() {
   return (
     <>
       <Navbar />{" "}
-      <div className="bg-gray-100 py-5 px-4">
+      <div className="min-h-[calc(100vh-64px)] bg-gray-100 py-5 px-4">
         {" "}
         <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-lg">
           {/* Header */}

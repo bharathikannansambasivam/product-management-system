@@ -50,14 +50,13 @@ const markets = [
 
 function MarketSlider() {
   return (
-    <section className="py-15 bg-white bg-gradient-to-l from-blue-50 to-white">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-10 bg-white bg-gradient-to-l from-blue-50 to-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        {" "}
         <h2 className="text-3xl font-bold text-center text-[#243B7B]">
           Markets We Serve
         </h2>
-
         <div className="w-20 h-1 bg-green-800 mx-auto mt-4 mb-12 rounded"></div>
-
         <Swiper
           modules={[Autoplay]}
           loop={true}
@@ -70,7 +69,7 @@ function MarketSlider() {
           }}
           speed={3500}
           breakpoints={{
-            320: {
+            100: {
               slidesPerView: 1,
             },
             640: {
@@ -86,7 +85,7 @@ function MarketSlider() {
         >
           {markets.map((market) => (
             <SwiperSlide key={market.id}>
-              <div className="bg-white rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+              <div className="bg-white  rounded-xl overflow-hidden shadow hover:shadow-xl transition">
                 <img
                   src={market.image}
                   alt={market.title}

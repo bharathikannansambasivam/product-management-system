@@ -81,8 +81,8 @@ function EditProduct() {
   return (
     <>
       <Navbar />
-      <div className="bg-gray-100 py-5 px-4">
-        <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-lg">
+      <div className="min-h-[calc(100vh-64px)] bg-gray-100 py-5 px-4 ">
+        <div className="max-w-3xl mx-auto bg-white rounded-xl   shadow-lg">
           <div className="border-b px-6 py-4">
             <h2 className="text-2xl font-bold text-[#243B7B]">Edit Product</h2>
           </div>
