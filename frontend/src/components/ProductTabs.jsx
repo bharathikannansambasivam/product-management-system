@@ -137,7 +137,15 @@ function ProductTabs({ product }) {
                 <p className="text-sm text-gray-500">PDF Document</p>
               </div>
 
-              <button className="bg-[#6DBE45] hover:bg-[#5ca33d] text-white px-6 py-2 rounded-lg">
+              <button
+                onClick={() =>
+                  toast("Download feature is coming soon!", {
+                    icon: "🚧",
+                  })
+                }
+                className="bg-[#6DBE45] text-white px-5 py-2 rounded"
+              >
+                {" "}
                 Download
               </button>
             </div>
