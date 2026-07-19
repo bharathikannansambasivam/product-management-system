@@ -58,7 +58,7 @@ function Home() {
               Product Management System
             </h3>
             <p className="text-sm text-gray-400 mt-1">
-              Built with React & Directus CMS
+              Built with React & Directus
             </p>
           </div>
 
