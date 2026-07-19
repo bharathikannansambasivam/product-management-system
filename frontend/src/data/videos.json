@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Metal Enclosure",
+    "thumbnail": "https://img.youtube.com/vi/KbW-bAlh0LI/maxresdefault.jpg",
+    "url": "https://youtu.be/KbW-bAlh0LI"
+  },
+  {
+    "id": 2,
+    "title": "HDR Camera with LFM",
+    "thumbnail": "https://img.youtube.com/vi/yBwSb7bZx9s/maxresdefault.jpg",
+    "url": "https://youtu.be/yBwSb7bZx9s"
+  },
+  {
+    "id": 3,
+    "title": "Introducing HDR Camera",
+    "thumbnail": "https://img.youtube.com/vi/toEUuSRH0UU/maxresdefault.jpg",
+    "url": "https://youtu.be/toEUuSRH0UU"
+  },
+  {
+    "id": 4,
+    "title": "Getting Started",
+    "thumbnail": "https://img.youtube.com/vi/toEUuSRH0UU/maxresdefault.jpg",
+    "url": "https://youtu.be/toEUuSRH0UU?si=2y2nmu0TwwhXpz-O"
+  }
+]
