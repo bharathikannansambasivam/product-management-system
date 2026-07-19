@@ -50,9 +50,9 @@ const markets = [
 
 function MarketSlider() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-15 bg-white bg-gradient-to-l from-blue-50 to-white">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center text-[#243B7B]">
+        <h2 className="text-3xl font-bold text-center text-[#243B7B]">
           Markets We Serve
         </h2>
 
