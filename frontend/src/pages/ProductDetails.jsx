@@ -5,29 +5,42 @@ import ProductTabs from "../components/ProductTabs";
 import ProductAccordion from "../components/ProductAccordion";
 import toast from "react-hot-toast";
 import Navbar from "../components/Navbar";
+import ProductNotFound from "../components/ProductNotFound";
 
 function ProductDetails() {
   const { slug } = useParams();
 
   const [product, setProduct] = useState(null);
-
+  const [loading, setLoading] = useState(true);
+  const [notFound, setNotFound] = useState(false);
   useEffect(() => {
     getProduct();
-  }, []);
+  }, [slug]);
 
   const getProduct = async () => {
     try {
       const res = await api.get(
         `/items/products?filter[slug][_eq]=${slug}&fields=*,product_image.*`
       );
-      setProduct(res.data.data[0]);
+
+      if (res.data.data.length === 0) {
+        setNotFound(true);
+      } else {
+        setProduct(res.data.data[0]);
+      }
     } catch (err) {
       toast.error("Something went wrong");
+    } finally {
+      setLoading(false);
     }
   };
 
-  if (!product) {
+  if (loading) {
     return <h1>Loading...</h1>;
+  }
+
+  if (notFound) {
+    return <ProductNotFound />;
   }
   return (
     <>
